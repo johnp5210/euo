@@ -1,0 +1,199 @@
+<!---
+WEBSITE BY JOHN PROVENCHER
+--->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>for emergency use only</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            transition: background-color 1s ease;
+
+
+        }
+        
+        * {
+            font-size: 12px;
+            font-family: helvetica;
+            text-transform: uppercase;
+            letter-spacing: .3px;
+            line-height: 1.2;
+            margin: 0;
+            background-color: transparent;
+            transition: color 1s ease;
+            border:none;
+        }
+
+
+        svg {
+            position: fixed;
+            position: fixed;
+            fill:none;
+            stroke-width: 10;
+            overflow: visible;
+            transition: stroke 1s ease;
+
+            
+
+        }
+        button, input {
+            text-decoration: underline;
+        }
+
+        #bottom {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+
+        }
+
+        #bottom * {
+            display: inline-block;
+        }
+    </style>
+
+    <script type="text/paperscript" canvas="canvas" src="index.html"></script>
+</head>
+
+<body>
+
+<svg width="200" height="200" id="x" xmlns="http://www.w3.org/2000/svg">
+
+      <path id="ring"
+        d="
+        M 100, 100
+        m -75, 0
+        a 75,-75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0
+        "
+  stroke="black" fill="none"/>
+    
+
+
+</svg>
+    
+    <div id="top">
+        <br><br>
+        <p>emergency use only</p><br>
+        <p>2020 — ELASTIC ENGAGEMENT RING</p>
+        <p>Elastic engagement ring, for urgent impulse of companionship</p>
+        <br>
+    </div>
+
+    <div id="bottom">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <table>
+                <tr>
+                    <td><input type="hidden" name="on0" value="Size / Color">Size / Color</td>
+                </tr>
+                <tr>
+                    <td><select name="os0">
+                            <option value="Large / Black">Large / Black $30.00 USD</option>
+                            <option value="Large / White">Large / White $30.00 USD</option>
+                            <option value="Large / Clear">Large / Clear $30.00 USD</option>
+                            <option value="Small / Black">Small / Black $30.00 USD</option>
+                            <option value="Small / White">Small / White $30.00 USD</option>
+                            <option value="Small / Clear">Small / Clear $30.00 USD</option>
+                        </select> </td>
+                </tr>
+            </table>
+            <input type="hidden" id="paypal" name="encrypted" value="-----BEGIN PKCS7-----MIIIkQYJKoZIhvcNAQcEoIIIgjCCCH4CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBvRbObORQ1CuJcsX31Qhyex9beH//E4eFWw+2F4lu8Xt2SEglgmP3Frznjnn1PsqhCNRr9rlnCfGEDDYjnCaGD7Y9Fsl1WrmkbcK0LADd/Sg+e+maujp1tf9Ni12XwyWZquFx9W1CxGQOh41vs2l6waiejV2HKnR69r+A7llZ8tjELMAkGBSsOAwIaBQAwggINBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECLtx49uKYJHmgIIB6MtiiciBpp/E1zdPWy5Lj9pwKLxBvB3ejDyTQbHN/dt5Aq7WL/Z+nC+DJUKckrgi39eBhtotNNIWcLoqwvaPSU+AuhKL8ijkLJgcUNQgXn52TA5gJz5dku4Ar5AiArWJr35sTt2HQDjCprldnCHDzLKQIc3ItV09z9hkALIUuqkl8JBjBiF6OrBo/KYGj2gBV1hKU0TjR98bCD3at9mG3nF4Ivy55xkNMLk2RWPWA9Efig+oFqTNTXpyquwwPePlMA6MZlUjqFQgy2TaUMv6/yHS/AaxpfvFj0KnCBf/RNkQomxofElmdlNDo8O6FwUeqr260EmISGDnLlRIMzzA7cFIhPBUSoXBIznTctYIUT85pXdtxPvFcnk1KDHpaPx7v4kcVFYJRLTUJUxNPECT8i5S/87r5G5sffrWRCDNqvt5CwQq+fdoBuZZNqZ7LW5oow5i5y9SygeQT+GiTcqzCgCpst9FrDhdp6y9UmygIL1k0Qjd7BTWNZe5rTERVe84LTO2SoInXkVKXY2XKeNFIoMIriBnWeHSqP6EqGBPlsbe+N9tUpB/DuRit9QOoA5icvcQRunqmJPnl1JOo9+a/AvKz1S+yPoLA8RXKyJYUhO1DerKinBqF4Ok+l8FDDglX/HsSke7Fec0oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAwODA3MTczMjE3WjAjBgkqhkiG9w0BCQQxFgQUYEfTgtcH6DUHOigRMRDTcXhs1NowDQYJKoZIhvcNAQEBBQAEgYCZnqJ4FClakJ2gZqljT0MHS1NOVsxmV4h9JZcBkheniUAvSpfkoc/XgXdaURFseq0x8kuP/aFTmScT3vZ+sr072tYQ5lG1bvZ53KrTAceGdQE9j/p4eERlKv0GuqSxLEt6wTI2qGaMLBBHEWMsjEUQ8rxmjPSoplHt5TDP7lpRCg==-----END PKCS7-----"><br><br>
+            <input type="submit" value="buy now" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br><br><br>
+        </form>
+    </div>
+
+    <script>
+
+
+function minMax(t, e, i, n, o) {
+    return n + (t - e) / (i - e) * (o - n)
+}
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+
+jQuery.fn.center = function () {
+    this.css("position", "absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +
+        $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +
+        $(window).scrollLeft()) + "px");
+    return this;
+}
+
+$('svg').center();
+        var r = 0;
+        $(document).mousemove(function(e){
+            var x = e.pageX
+            var y = e.pageY
+            var minX = minMax(x, 0, w, -75, 75)
+            var minY = minMax(y, 0, h, 75, -75)
+            
+            var path = "M 100, 100 m -75, 0 a" + minX + ",-75 0 1,0 150,0 a" + minX + ",75 0 1,0 -150,0";
+            r+=.5;
+            var rCSS = "rotate(" + r +"deg)"
+            $('svg').css('transform', rCSS)
+                    document.getElementById('ring').setAttribute('d', path)
+$('svg').center();
+
+        })
+        
+        var click = 1;
+        var click2 = 2;
+
+        var colors = ["black", "white", "clear"]
+        
+        function color(){
+            if(click>=3){
+                click=0;
+            }
+    
+            if(click===1){
+             document.getElementById('ring').setAttribute('stroke', 'white')
+            $('*').css('color', 'white')
+
+            $('body').css('background-color', '#696969') 
+            }
+            if(click===2){
+             document.getElementById('ring').setAttribute('stroke', '#ccc')
+            $('*').css('color', '#ccc')
+            $('body').css('background-color', '#f1f1f1') 
+            }
+            if(click===0){
+             document.getElementById('ring').setAttribute('stroke', 'black')
+            $('*').css('color', 'black')
+            $('body').css('background-color', '#fff') 
+            }
+            
+            //$('#color').html(colors[click])
+            click+=1;
+
+       }
+        
+        $(document).click(function(){
+            color();
+        })
+
+        
+var svg = '<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M 100, 100 m -75, 0 a 75,-75 0 1,0 150,0 a 75,75 0 1,0 -150,0"   stroke="black" fill="none"/></svg>'
+
+//$('body').append(svg)
+
+    </script>
+</body>
+
+</html>

@@ -125,7 +125,11 @@ function minMax(t, e, i, n, o) {
 var w = window.innerWidth;
 var h = window.innerHeight;
 
-
+$( window ).resize(function() {
+   w = window.innerWidth;
+ h = window.innerHeight;
+});
+        
 jQuery.fn.center = function () {
     this.css("position", "absolute");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +

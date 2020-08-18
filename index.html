@@ -32,7 +32,6 @@ WEBSITE BY JOHN PROVENCHER
             margin: 0;
             background-color: transparent;
             transition: color 1s ease;
-            border:none;
         }
 
 
@@ -48,7 +47,9 @@ WEBSITE BY JOHN PROVENCHER
 
         }
         button, input {
-            text-decoration: underline;
+                        border:1px solid #000;
+            outline: NONE;
+
         }
 
         #bottom {
@@ -169,17 +170,22 @@ $('svg').center();
             if(click===1){
              document.getElementById('ring').setAttribute('stroke', 'white')
             $('*').css('color', 'white')
+            $('*').css('border-color', 'white')
 
             $('body').css('background-color', '#696969') 
             }
             if(click===2){
              document.getElementById('ring').setAttribute('stroke', '#ccc')
             $('*').css('color', '#ccc')
+                            $('*').css('border-color', '#ccc')
+
             $('body').css('background-color', '#f1f1f1') 
             }
             if(click===0){
              document.getElementById('ring').setAttribute('stroke', 'black')
             $('*').css('color', 'black')
+                            $('*').css('border-color', 'black')
+
             $('body').css('background-color', '#fff') 
             }
             
